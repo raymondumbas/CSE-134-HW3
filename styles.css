@@ -1,0 +1,31 @@
+:root{
+    --primary_color: blue;
+    --secondary_color: lightblue;
+    --accent_color: green;
+    --background_color: gray;
+
+}
+
+body{
+    display:flex;
+}
+/* Style for the vertical navbar */
+.sidebar {
+    background-color: #333; /* Change the background color as needed */
+    width: 200px; /* Set the width of the navbar */
+}
+
+/* Style for the links inside the navbar */
+.sidebar a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin: 5px 0;
+    transition: background-color 0.3s;
+}
+
+/* Change the link color on hover */
+.sidebar a:hover {
+    background-color: #555;
+}
