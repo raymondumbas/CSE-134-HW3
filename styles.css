@@ -9,7 +9,7 @@
 
 body{
     background-color: var(--background_color,rgb(10, 15, 34));
-    color: var(--text_color);
+    color: var(--text_color,rgb(240, 244, 248));
 }
 
 h1{
