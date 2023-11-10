@@ -21,8 +21,6 @@ h1{
 :root{
     /*Color Variables (fallback = same value)*/
     --text_color: rgb(240, 244, 248);
-    --primary_color: blue; 
-    --accent_color: green;
     --secondary_color: rgb(29, 34, 51);
     --background_color: rgb(10, 15, 34);
 }
@@ -31,6 +29,9 @@ body{
     display:flex;
 }
 
+hr{
+    width: 75%;
+}
 /* Style for the vertical navbar */
 header {
     background-color: var(--secondary_color,gray); /* Change the background color as needed */
@@ -68,11 +69,16 @@ button:has(img){
     width: 60%;
 }
 
+.menu{
+    align-self: flex-start;
+}
+
 footer{
     position:absolute;
     bottom:0;
     margin: 0.5rem;
     align-self: center;
+    font-size: 0.25rem;
 }
 /* Animations */
 @keyframes fadeIn{
@@ -83,5 +89,33 @@ footer{
     to{
         opacity:1;
         transform: scale(1);
+    }
+}
+
+/*Media Query Breakpoints
+(breakpoint values taken from example at 
+https://www.w3schools.com/howto/howto_css_media_query_breakpoints.asp)*/
+
+/* Small devices (portrait tablets and large phones, 768px and up) */
+@media only screen and (max-width: 768px) {
+    header{
+        display:none;
+    }
+    .menu{
+        display: block;
+    }
+  }
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+    .menu{
+        display: none;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .menu{
+        display: none;
     }
 }

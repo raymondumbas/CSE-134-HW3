@@ -5,12 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>About</title>
-    <style>
-        img{
-            height:20dvw;
-            width: 35dvw;
-        }
-    </style>
 </head>
 <body>
     <header>
@@ -31,27 +25,22 @@
                 I was born and raised in San Diego County, and have always been interested in STEM.
                 I became interested in Computer Science specifically because of video games.
             </pre>
-            <h3>Fun Facts:</h3>
-            <ul id = "funfact_list">
-                <li>Fun Fact 1</li>
-                <li>Fun Fact 2</li>
-                <li>Fun Fact 3</li>
-            </ul>
         </section>
         <hr>
         <section>
-            <h2>Hobbies</h2>
-                <h3>Photography</h3>
+            <h2>Photography</h2>
                 <figure>
                     <picture>
-                        <source media="(min-width:650px)" srcset="media/images/beach.jpg">
-                        <img src="media/images/beach.jpg" alt="Photo of the beach" >
+                        <source media="(max-width: 768px)" srcset="media/images/beach_small.jpg">
+                        <source media="(min-width: 768px)" srcset="media/images/beach_medium.jpg">
+                        <source media="(min-width: 992px)" srcset="media/images/beach_large.jpg">
+                        <img src="media/images/beach_medium.jpg" alt="Photo of the beach" >
                     </picture>
                     <figcaption>Taken at Carlsbad Beach</figcaption>
                 </figure>
-        
         </section>
-
+        <hr>
+        
     </div>
     
 <script src="script.js"></script>

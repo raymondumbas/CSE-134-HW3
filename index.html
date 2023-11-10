@@ -8,8 +8,13 @@
     <style>
         main h1{
             text-decoration: underline; 
-            animation: fadeIn 5s ease;
+            animation: fadeIn 3s ease;
             transform-origin: right;
+        }
+
+        img{
+            width:60dvw;
+            height:auto;
         }
         
     </style>
@@ -26,10 +31,16 @@
     </header>
 
     <div class = "content">
+        <button class = "menu">MENU WILL POP WHEN WE ADD JS</button>
         <main>
             <h1>Hello! I'm <i>Raymond Umbas</i>.</h1>
             <p>I am a <b>Computer Science</b> Major and here is some info about me and what I have done.</p>
-            
+            <picture>
+                <source media="(max-width: 768px)" srcset="media/images/me_small.jpg">
+                <source media="(min-width: 768px)" srcset="media/images/me_medium.jpg">
+                <source media="(min-width: 992px)" srcset="media/images/me_large.jpg">
+                <img src="media/images/me_medium.jpg" alt="Photo of me at UCSD" >
+            </picture>
         </main>
         <footer>
             <span>Author: Raymond Umbas</span>
